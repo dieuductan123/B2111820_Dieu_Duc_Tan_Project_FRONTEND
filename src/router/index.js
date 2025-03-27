@@ -7,6 +7,9 @@ import NotFound from '@/views/NotFound.vue';
 import Publisher from "@/views/Publisher/Publisher.vue";
 import AddPublisher from "@/views/Publisher/AddPublisher.vue";
 import EditPublisher from "@/views/Publisher/EditPublisher.vue";
+
+import AddBook from "@/views/Book/AddBook.vue";
+import EditBook from "@/views/Book/EditBook.vue";
 const routes = [
   {
     path: "/",
@@ -37,6 +40,17 @@ const routes = [
     path: "/publisher/edit/:id",
     name: "edit-publisher",
     component: EditPublisher,
+    props: true,
+  },
+  {
+    path: "/book/add",
+    name: "add-book",
+    component: AddBook,
+  },
+  {
+    path: "/book/edit/:id",
+    name: "edit-book",
+    component: EditBook,
     props: true,
   },
   // {
