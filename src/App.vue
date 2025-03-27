@@ -3,6 +3,9 @@
     <header v-if="showNavbarAndFooter" class="">
       <Navbar></Navbar>
     </header>
+    <div class="">
+      <RouterView></RouterView>
+    </div>
     <footer v-if="showNavbarAndFooter">
       <Footer></Footer>
     </footer>
