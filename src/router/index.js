@@ -13,6 +13,8 @@ import EditBook from "@/views/Book/EditBook.vue";
 
 import Staff from "@/views/Staff/Staff.vue";
 import AddStaff from "@/views/Staff/AddStaff.vue";
+
+import Reader from "@/views/Reader.vue";
 const routes = [
   {
     path: "/",
@@ -65,6 +67,11 @@ const routes = [
     path: "/staff/add",
     name: "add-staff",
     component: AddStaff,
+  },
+  {
+    path: "/reader",
+    name: "reader",
+    component: Reader,
   },
   // {
   //   path: "/publisher/add",
