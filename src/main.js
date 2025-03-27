@@ -8,4 +8,11 @@ import App from "./App.vue";
 
 import router from "@/router";
 
-createApp(App).use(router).mount("#app");
+import store from "./store";
+
+const token = localStorage.getItem("token");
+if (token) {
+  store.commit("setToken", token);
+}
+
+createApp(App).use(router).use(store).mount("#app");
