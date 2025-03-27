@@ -13,13 +13,17 @@ import EditBook from "@/views/Book/EditBook.vue";
 
 import Staff from "@/views/Staff/Staff.vue";
 import AddStaff from "@/views/Staff/AddStaff.vue";
+import InfoStaff from "@/views/PersonalInfo/InfoStaff.vue";
+import ChangePasswordStaff from "@/views/PersonalInfo/ChangePasswordStaff.vue";
 
 import Reader from "@/views/Reader.vue";
-
+import InfoCustomer from "@/views/PersonalInfo/InfoCustomer.vue";
 import BorrowBookCustomer from "@/views/BorrowBookCustomer.vue";
 
 import BorrowedBookTracking from "@/views/BorrowedBookTracking.vue";
 import BorrowBookHistory from "@/views/BorrowBookHistory/BorrowBookHistory.vue";
+
+
 const routes = [
   {
     path: "/",
@@ -74,6 +78,18 @@ const routes = [
     component: AddStaff,
   },
   {
+    path: "/detail-info-staff/password/:id",
+    name: "change-password-staff",
+    component: ChangePasswordStaff,
+    props: true,
+  },
+  {
+    path: "/detail-info-staff/:id",
+    name: "detail-info-staff",
+    component: InfoStaff,
+    props: true,
+  },
+  {
     path: "/reader",
     name: "reader",
     component: Reader,
@@ -88,6 +104,12 @@ const routes = [
     path: "/borrow-book-history/:id",
     name: "borrow-book-history",
     component: BorrowBookHistory,
+    props: true,
+  },
+  {
+    path: "/detail-info-reader/:id",
+    name: "detail-info-reader",
+    component: InfoCustomer,
     props: true,
   },
   {
