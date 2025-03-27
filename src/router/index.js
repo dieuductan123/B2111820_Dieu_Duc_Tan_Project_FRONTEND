@@ -19,6 +19,7 @@ import Reader from "@/views/Reader.vue";
 import BorrowBookCustomer from "@/views/BorrowBookCustomer.vue";
 
 import BorrowedBookTracking from "@/views/BorrowedBookTracking.vue";
+import BorrowBookHistory from "@/views/BorrowBookHistory/BorrowBookHistory.vue";
 const routes = [
   {
     path: "/",
@@ -81,6 +82,12 @@ const routes = [
     path: "/borrow-book",
     name: "borrow-book",
     component: BorrowBookCustomer,
+    props: true,
+  },
+  {
+    path: "/borrow-book-history/:id",
+    name: "borrow-book-history",
+    component: BorrowBookHistory,
     props: true,
   },
   {
