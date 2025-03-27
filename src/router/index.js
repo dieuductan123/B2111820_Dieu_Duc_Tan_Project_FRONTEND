@@ -10,6 +10,9 @@ import EditPublisher from "@/views/Publisher/EditPublisher.vue";
 
 import AddBook from "@/views/Book/AddBook.vue";
 import EditBook from "@/views/Book/EditBook.vue";
+
+import Staff from "@/views/Staff/Staff.vue";
+import AddStaff from "@/views/Staff/AddStaff.vue";
 const routes = [
   {
     path: "/",
@@ -52,6 +55,16 @@ const routes = [
     name: "edit-book",
     component: EditBook,
     props: true,
+  },
+  {
+    path: "/staff",
+    name: "staff",
+    component: Staff,
+  },
+  {
+    path: "/staff/add",
+    name: "add-staff",
+    component: AddStaff,
   },
   // {
   //   path: "/publisher/add",
