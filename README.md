@@ -1,3 +1,12 @@
+### ----------- HỌC PHẦN: PHÁT TRIỂN ỨNG DỤNG WEB - CT449 -----------
+### BÀI TẬP LỚN: XÂY DỰNG ỨNG DỤNG QUẢN LÝ MƯỢN SÁCH ONLINE
+### NỘI DUNG: PHẦN FRONTEND
+#### Họ tên: Diêu Đức Tấn
+#### MSSV: B2111820
+#### Nhóm HP: CT449-02
+#### Năm học: 2025-2026
+
+
 # book_frontend
 
 This template should help get you started developing with Vue 3 in Vite.
