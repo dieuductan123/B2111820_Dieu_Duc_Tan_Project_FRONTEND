@@ -3,6 +3,10 @@ import HomePage from "@/views/Home.vue";
 import Login from "@/views/Login.vue";
 import SignUp from "@/views/SignUp.vue";
 import NotFound from '@/views/NotFound.vue';
+
+import Publisher from "@/views/Publisher/Publisher.vue";
+import AddPublisher from "@/views/Publisher/AddPublisher.vue";
+import EditPublisher from "@/views/Publisher/EditPublisher.vue";
 const routes = [
   {
     path: "/",
@@ -19,6 +23,27 @@ const routes = [
     name: "sign-up",
     component: SignUp,
   },
+  {
+    path: "/publisher",
+    name: "publisher",
+    component: Publisher,
+  },
+  {
+    path: "/publisher/add",
+    name: "add-publisher",
+    component: AddPublisher,
+  },
+  {
+    path: "/publisher/edit/:id",
+    name: "edit-publisher",
+    component: EditPublisher,
+    props: true,
+  },
+  // {
+  //   path: "/publisher/add",
+  //   name: "add-publisher",
+  //   component: AddPublisher,
+  // },
   {
     path: "/:pathMatch(.*)*", // Sửa lại `patchMatch` thành `pathMatch`
     name: "not_found",
